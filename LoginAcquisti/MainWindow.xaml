@@ -16,7 +16,7 @@
             <ColumnDefinition Width="6*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Border Background="White"></Border>
+        <Border Background="White" ></Border>
 
         <Border Grid.Column="1" Background="RoyalBlue"></Border>
         <Border Grid.Row="1" Grid.ColumnSpan="2" Background="MidnightBlue"></Border>
