@@ -47,7 +47,7 @@
                 <Label Content="Password: " Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Foreground="White" FontFamily="Microsoft JhengHei"></Label>
                 <TextBox x:Name="txtpass" Grid.Column="2" Grid.Row="2" Height="30" Width="90"></TextBox>
 
-                <Button x:Name="btnAccedi" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Height="40" Width="120" Content="Accedi" FontFamily="Microsoft JhengHei"></Button>
+                <Button x:Name="btnAccedi" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Height="40" Width="120" Content="Accedi" FontFamily="Microsoft JhengHei" Click="BtnAccedi_Click"></Button>
             </Grid>
             
         </StackPanel>
@@ -72,12 +72,12 @@
                 <Label Content="Quantità: " Grid.Row="2" Grid.Column="0" Height="35" HorizontalAlignment="Center" FontFamily="Microsoft JhengHei" Background="#00000000" Foreground="White"></Label>
                 <Label Content="Prezzo: " Grid.Row="3" Grid.Column="0" Height="35" HorizontalAlignment="Center" FontFamily="Microsoft JhengHei" Background="#00000000" Foreground="White"></Label>
 
-                <ComboBox x:Name="cmbProd" Grid.Column="1" Grid.Row="1" Width="100" Height="20" FontFamily="Microsoft JhengHei"></ComboBox>
+                <ComboBox x:Name="cmbProd" Grid.Column="1" Grid.Row="1" Width="100" Height="20" FontFamily="Microsoft JhengHei" Loaded="CmbProd_Loaded" SelectionChanged="CmbProd_SelectionChanged"></ComboBox>
                 <TextBox x:Name="txtQuant" Grid.Column="1" Grid.Row="2" Width="100" Height="20" FontFamily="Microsoft JhengHei"></TextBox>
                 <TextBox x:Name="txtPrezzo" Grid.Column="1" Grid.Row="3" Width="100" Height="20" FontFamily="Microsoft JhengHei"></TextBox>
 
-                <Button Grid.Column="0" Grid.Row="4" Content="Pulisci" Width="90" Height="25"></Button>
-                <Button Grid.Column="1" Grid.Row="4" Content="Stampa" Width="90" Height="25"></Button>
+                <Button x:Name="btnPulisci" Grid.Column="0" Grid.Row="4" Content="Pulisci" Width="90" Height="25" Click="BtnPulisci_Click"></Button>
+                <Button x:Name="btnStampa" Grid.Column="1" Grid.Row="4" Content="Stampa" Width="90" Height="25" Click="BtnStampa_Click"></Button>
             </Grid>
             
         </StackPanel>
@@ -90,7 +90,7 @@
                 </Grid.RowDefinitions>
 
                 <ListBox x:Name="lblAcquisti" Grid.Row="0" Grid.Column="1" Height="90" Width="400" VerticalAlignment="Center" Margin="0,40,0,0"></ListBox>
-                <Button x:Name="btnRimuovi" Grid.Row="1" Grid.Column="1" Content="Rimuovi Selezione"  Height="30" Width="150"></Button>
+                <Button x:Name="btnRimuovi" Grid.Row="1" Grid.Column="1" Content="Rimuovi Selezione"  Height="30" Width="150" Click="BtnRimuovi_Click"></Button>
 
             </Grid>
         </StackPanel>
